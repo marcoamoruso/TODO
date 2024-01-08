@@ -10,21 +10,21 @@ Docker
 
 
 ```bash
-$ git clone https://github.com/marcoamoruso/TODO.git
-$ cd TODO
+git clone https://github.com/marcoamoruso/TODO.git
+cd TODO
 ```
 
 ## Running Containers
 
 To build containers:
 ```bash
-$ docker-compose build
+docker-compose build
 ```
 To start containers in background:
 ```bash
-$ docker-compose up -d
+docker-compose up -d
 ```
 To run client and test TODO with CLI:
 ```bash
-$ docker-compose exec client go run client.go
+docker-compose exec client go run client.go
 ```
