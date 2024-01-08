@@ -24,7 +24,7 @@ To start containers in background:
 ```bash
 docker-compose up -d
 ```
-To run client and test TODO with CLI:
+To run client and test TODO list with CLI:
 ```bash
 docker-compose exec client go run client.go
 ```
