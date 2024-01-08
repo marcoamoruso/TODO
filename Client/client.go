@@ -145,7 +145,7 @@ func main() {
 			case 1:
 				fmt.Print("Please type a new title: ")
 				todo.Title = readLine()
-				// Set Deadline equal to the current one
+				// Set Deadline and Done equal to the current ones
 				for i := 0; i < len(todoList); i++ {
 					if todoList[i].Id == idMap[choiceInt] {
 						todo.Deadline = todoList[i].Deadline
@@ -157,7 +157,7 @@ func main() {
 			case 2:
 				fmt.Print("Please type a new deadline (YYYY-MM-DD): ")
 				todo.Deadline = readLine()
-				// Set Title equal to the current one
+				// Set Title and Done equal to the current ones
 				for i := 0; i < len(todoList); i++ {
 					if todoList[i].Id == idMap[choiceInt] {
 						todo.Title = todoList[i].Title
@@ -171,6 +171,7 @@ func main() {
 				todo.Title = readLine()
 				fmt.Print("Please type a new deadline (YYYY-MM-DD): ")
 				todo.Deadline = readLine()
+				// Set Done equal to the current one
 				for i := 0; i < len(todoList); i++ {
 					if todoList[i].Id == idMap[choiceInt] {
 						todo.Done = todoList[i].Done
